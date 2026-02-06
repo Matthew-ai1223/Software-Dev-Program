@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule | 3-Month Software Dev Program</title>
+
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="accet/styl.css">
+</head>
+
+<body class="dashboard-body">
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="ph-fill ph-code-block logo-icon"></i>
+                <span class="logo-text">DevProgram</span>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashbord.html" class="nav-item">
+                    <i class="ph ph-squares-four"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="curriculum.html" class="nav-item">
+                    <i class="ph ph-book-open-text"></i>
+                    <span>Curriculum</span>
+                </a>
+                <a href="assignments.html" class="nav-item">
+                    <i class="ph ph-check-circle"></i>
+                    <span>Assignments</span>
+                </a>
+                <a href="community.html" class="nav-item">
+                    <i class="ph ph-users"></i>
+                    <span>Community</span>
+                </a>
+                <a href="schedule.html" class="nav-item active">
+                    <i class="ph ph-calendar-blank"></i>
+                    <span>Schedule</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="settings.html" class="nav-item">
+                    <i class="ph ph-gear"></i>
+                    <span>Settings</span>
+                </a>
+                <a href="reg.html" class="nav-item logout">
+                    <i class="ph ph-sign-out"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="ph ph-list"></i></button>
+                <div class="page-title">
+                    <h2>Class Schedule</h2>
+                </div>
+                <div class="user-profile">
+                    <div class="notification-bell"><i class="ph ph-bell"></i><span class="badge"></span></div>
+                    <div class="avatar"><span>AS</span></div>
+                    <div class="user-info"><span class="user-name">Alex Sterling</span><span class="user-role">Frontend
+                            Track</span></div>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- Today's Schedule -->
+                <div class="welcome-card full-width" style="flex-direction: column; align-items: start; gap: 1rem;">
+                    <div class="welcome-text">
+                        <h3>Today, Feb 06</h3>
+                    </div>
+
+                    <div class="class-item"
+                        style="width: 100%; background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px;">
+                        <div class="date-box">
+                            <span class="day">06</span>
+                        </div>
+                        <div class="class-details">
+                            <h5 style="font-size: 1.1rem; color: var(--text-main);">Live Q&A Session</h5>
+                            <p>04:00 PM - 05:00 PM • Hosted by Instructor Mike</p>
+                        </div>
+                        <button class="primary-btn small">Join Now</button>
+                    </div>
+                </div>
+
+                <!-- Upcoming Week -->
+                <div class="content-card full-width">
+                    <div class="card-header-row">
+                        <h4>Next 7 Days</h4>
+                    </div>
+                    <div class="class-list">
+                        <div class="class-item">
+                            <div class="date-box"><span class="day">08</span><span class="month">Feb</span></div>
+                            <div class="class-details">
+                                <h5>Advanced CSS Grid & Flexbox</h5>
+                                <p>10:00 AM - 12:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="date-box"><span class="day">10</span><span class="month">Feb</span></div>
+                            <div class="class-details">
+                                <h5>JavaScript ES6+ Deep Dive</h5>
+                                <p>10:00 AM - 12:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="date-box"><span class="day">12</span><span class="month">Feb</span></div>
+                            <div class="class-details">
+                                <h5>Code Review Session</h5>
+                                <p>02:00 PM - 03:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="accet/main.js" defer></script>
+    <script src="accet/content-loader.js" defer></script>
+</body>
+
+</html>

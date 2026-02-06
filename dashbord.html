@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | 3-Month Software Dev Program</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="accet/styl.css">
+</head>
+
+<body class="dashboard-body">
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="ph-fill ph-code-block logo-icon"></i>
+                <span class="logo-text">DevProgram</span>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashbord.html" class="nav-item active">
+                    <i class="ph ph-squares-four"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="curriculum.html" class="nav-item">
+                    <i class="ph ph-book-open-text"></i>
+                    <span>Curriculum</span>
+                </a>
+                <a href="assignments.html" class="nav-item">
+                    <i class="ph ph-check-circle"></i>
+                    <span>Assignments</span>
+                </a>
+                <a href="community.html" class="nav-item">
+                    <i class="ph ph-users"></i>
+                    <span>Community</span>
+                </a>
+                <a href="schedule.html" class="nav-item">
+                    <i class="ph ph-calendar-blank"></i>
+                    <span>Schedule</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="settings.html" class="nav-item">
+                    <i class="ph ph-gear"></i>
+                    <span>Settings</span>
+                </a>
+                <a href="reg.html" class="nav-item logout">
+                    <i class="ph ph-sign-out"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="ph ph-list"></i>
+                </button>
+                <div class="page-title">
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="user-profile">
+                    <div class="notification-bell">
+                        <i class="ph ph-bell"></i>
+                        <span class="badge"></span>
+                    </div>
+                    <div class="avatar">
+                        <span>..</span>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Loading...</span>
+                        <span class="user-role">Loading...</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-grid">
+                <!-- Welcome Section -->
+                <div class="welcome-card full-width">
+                    <div class="welcome-text">
+                        <h3>Welcome back! 👋</h3>
+                        <p>You're making great progress. You have <strong>2 assignments</strong> due this week.</p>
+                        <button class="primary-btn small">Continue Learning</button>
+                    </div>
+                    <div class="welcome-decoration">
+                        <i class="ph-duotone ph-rocket-launch"></i>
+                    </div>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="stat-card">
+                    <div class="stat-icon blue">
+                        <i class="ph ph-clock"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="label">Hours Spent</span>
+                        <span class="value">12.5h</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="ph ph-check-square"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="label">Tasks Done</span>
+                        <span class="value">8/12</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon orange">
+                        <i class="ph ph-trophy"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="label">Current Rank</span>
+                        <span class="value">Top 10%</span>
+                    </div>
+                </div>
+
+                <!-- Upcoming Classes -->
+                <div class="content-card wide">
+                    <div class="card-header-row">
+                        <h4>Upcoming Classes</h4>
+                        <a href="#" class="view-all">View Schedule</a>
+                    </div>
+                    <div class="class-list">
+                        <div class="class-item">
+                            <div class="date-box">
+                                <span class="day">08</span>
+                                <span class="month">Feb</span>
+                            </div>
+                            <div class="class-details">
+                                <h5>Advanced CSS Grid & Flexbox</h5>
+                                <p>10:00 AM - 12:00 PM • Live Session</p>
+                            </div>
+                            <button class="btn-icon">
+                                <i class="ph ph-video-camera"></i>
+                            </button>
+                        </div>
+                        <div class="class-item">
+                            <div class="date-box">
+                                <span class="day">10</span>
+                                <span class="month">Feb</span>
+                            </div>
+                            <div class="class-details">
+                                <h5>JavaScript ES6+ Deep Dive</h5>
+                                <p>10:00 AM - 12:00 PM • Live Session</p>
+                            </div>
+                            <button class="btn-icon">
+                                <i class="ph ph-video-camera"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Progress -->
+                <div class="content-card narrow">
+                    <div class="card-header-row">
+                        <h4>My Progress</h4>
+                    </div>
+                    <div class="progress-module">
+                        <div class="progress-header">
+                            <span>HTML5 Module</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="progress-module">
+                        <div class="progress-header">
+                            <span>CSS3 Mastery</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="progress-module">
+                        <div class="progress-header">
+                            <span>JavaScript Basics</span>
+                            <span>10%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 10%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="accet/main.js" defer></script>
+</body>
+
+</html>
