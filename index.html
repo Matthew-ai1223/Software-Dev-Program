@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Month Software Dev Program | Master Modern Web Technologies</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Launch your tech career with our intensive 3-month Software Development Program. Master Frontend, Backend, and Fullstack development through hands-on projects and expert mentorship.">
+    <meta name="keywords"
+        content="Software Development, Coding Bootcamp, Web Development, Frontend, Backend, Fullstack, Learn React, Node.js, Tech Career">
+    <meta name="author" content="DevProgram Team">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://3dev.ct.ws/">
+    <meta property="og:title" content="3-Month Software Dev Program | Master Modern Web Tech">
+    <meta property="og:description"
+        content="Turn your coding dreams into reality. Join our intensive program and become a job-ready developer in 90 days.">
+    <meta property="og:image" content="accet/hero-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://3dev.ct.ws/">
+    <meta property="twitter:title" content="3-Month Software Dev Program | Master Modern Web Tech">
+    <meta property="twitter:description"
+        content="Turn your coding dreams into reality. Join our intensive program and become a job-ready developer in 90 days.">
+    <meta property="twitter:image" content="accet/hero-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="accet/favicon.png">
+    <link rel="apple-touch-icon" href="accet/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="accet/styl.css">
+
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "DevProgram 3-Month Software Development",
+      "description": "Intensive 3-month software development training program focused on job-readiness.",
+      "url": "https://devprogram.com",
+      "logo": "https://3dev.ct.ws/accet/favicon.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Digital Center",
+        "addressCountry": "NG"
+      }
+    }
+    </script>
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --secondary: #8b5cf6;
+            --accent: #0ea5e9;
+            --success: #10b981;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --border-color: #334155;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Landing Page Specific Styles */
+        .landing-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.25rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero-section {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 10rem 2rem 6rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--primary);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .hero-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 800;
+            line-height: 1.05;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #3b82f6 50%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            max-width: 1000px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.25rem);
+            color: var(--text-muted);
+            max-width: 700px;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .cta-container {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-bottom: 5rem;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+
+        .primary-btn {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+
+        .primary-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(59, 130, 246, 0.4);
+            background: #2563eb;
+        }
+
+        .glass-btn {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .glass-btn:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            padding: 3rem;
+            background: var(--bg-card);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            max-width: 1000px;
+            width: 90%;
+            margin: -3rem auto 4rem;
+            position: relative;
+            z-index: 10;
+            border: 1px solid var(--border-color);
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Section Global */
+        .section {
+            padding: 6rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+            border-color: var(--primary);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        /* Community Section */
+        .community-preview {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            background: var(--bg-card);
+            color: white;
+            padding: 4rem;
+            border-radius: 32px;
+            margin-top: 4rem;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid var(--border-color);
+        }
+
+        .community-image {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            transform: rotate(-2deg);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 968px) {
+            .community-preview {
+                grid-template-columns: 1fr;
+                padding: 2.5rem;
+            }
+
+            .stats-bar {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+                padding: 2rem;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-subtle">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2" style="top: 60%; left: 80%;"></div>
+    </div>
+
+    <header class="landing-header">
+        <div class="sidebar-header" style="margin-bottom: 0;">
+            <i class="ph-fill ph-code-block logo-icon" style="color: var(--primary);"></i>
+            <span class="logo-text">DevProgram</span>
+        </div>
+        <nav style="display: flex; gap: 2rem; align-items: center;">
+            <a href="curriculum.html"
+                style="text-decoration: none; color: var(--text-muted); font-weight: 500;">Curriculum</a>
+            <a href="community.html"
+                style="text-decoration: none; color: var(--text-muted); font-weight: 500;">Community</a>
+            <a href="dashbord.html" style="text-decoration: none; color: var(--text-muted); font-weight: 600;">Login</a>
+            <a href="reg.html" class="primary-btn" style="padding: 0.75rem 1.5rem; font-size: 0.9rem;">Enroll Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-badge">
+                <i class="ph-fill ph-sparkle"></i>
+                Cohorts open for April 2026
+            </div>
+            <h1 class="hero-title">Master the Art of Shipping <br>Pro-Level Applications</h1>
+            <p class="hero-subtitle">An intensive 3-month program designed to turn beginners into job-ready software
+                engineers through hands-on building and expert code reviews.</p>
+
+            <div class="cta-container">
+                <a href="reg.html" class="primary-btn">
+                    Apply for Cohort
+                    <i class="ph-bold ph-arrow-right"></i>
+                </a>
+                <a href="curriculum.html" class="glass-btn">
+                    <i class="ph-duotone ph-book-open"></i>
+                    View Curriculum
+                </a>
+            </div>
+
+            <div class="stats-bar">
+                <!-- <div class="stat-item">
+                    <span class="stat-value">500+</span>
+                    <span class="stat-label">Graduates</span>
+                </div> -->
+                <div class="stat-item">
+                    <span class="stat-value">92%</span>
+                    <span class="stat-label">Hired in 6m</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">12+</span>
+                    <span class="stat-label">Partner Cos.</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">4.9/5</span>
+                    <span class="stat-label">Member Rating</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="features">
+            <div class="section-header">
+                <h2 class="section-title">Everything you need to succeed</h2>
+                <p style="color: var(--text-muted);">From codebase to deployment, we cover the entire lifecycle.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="ph-duotone ph-rocket-launch"></i></div>
+                    <h3>Intensive Curriculum</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Follow a proven roadmap that focuses on the
+                        20% of tools used 80% of the time in modern tech companies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="ph-duotone ph-users-three"></i></div>
+                    <h3>Live Mentorship</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Weekly live sessions and daily Slack support
+                        to unblock you whenever you get stuck on a tricky bug.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="ph-duotone ph-briefcase"></i></div>
+                    <h3>Job Placement</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Access to our exclusive job board and warm
+                        introductions to recruitment teams at top startups.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="community-preview">
+                <div>
+                    <h2 style="font-family: 'Outfit'; font-size: 2.5rem; margin-bottom: 1.5rem;">Join a thriving
+                        community</h2>
+                    <p style="color: #94a3b8; line-height: 1.7; margin-bottom: 2rem; font-size: 1.1rem;">Software
+                        development isn't just about code—it's about the people you build with. Our community of 1,000+
+                        developers is here to support you long after the program ends.</p>
+                    <ul style="list-style: none; padding: 0; display: grid; gap: 1rem;">
+                        <li style="display: flex; align-items: center; gap: 12px; color: #cbd5e1;">
+                            <i class="ph-fill ph-check-circle" style="color: var(--success);"></i>
+                            Monthly Alumni Meetups
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 12px; color: #cbd5e1;">
+                            <i class="ph-fill ph-check-circle" style="color: var(--success);"></i>
+                            Private Job Board Access
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 12px; color: #cbd5e1;">
+                            <i class="ph-fill ph-check-circle" style="color: var(--success);"></i>
+                            Collaboration Channels
+                        </li>
+                    </ul>
+                    <a href="community.html" class="primary-btn"
+                        style="margin-top: 3rem; background: white; color: var(--bg-dark);">Explore Community</a>
+                </div>
+                <div style="position: relative;">
+                    <img src="accet/hero-image.png" alt="Community" class="community-image">
+                    <div
+                        style="position: absolute; bottom: 20px; right: -20px; background: var(--primary); padding: 1rem; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+                        <span style="font-weight: 700;">1.2k+ Active Members</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="text-align: center;">
+            <div
+                style="background: linear-gradient(135deg, var(--primary), var(--secondary)); padding: 4rem; border-radius: 24px; color: white;">
+                <h2 style="font-family: 'Outfit'; font-size: 2.5rem; margin-bottom: 1rem;">Ready to transform your
+                    career?</h2>
+                <p style="margin-bottom: 2.5rem; opacity: 0.9; font-size: 1.1rem;">Limited spots available for the next
+                    cohort. Secure yours today.</p>
+                <a href="reg.html" class="primary-btn"
+                    style="background: white; color: var(--primary); padding: 1rem 3rem;">Enroll Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        style="text-align: center; padding: 4rem 2rem; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid var(--border-color); background: var(--bg-dark);">
+        <div class="sidebar-header" style="justify-content: center; margin-bottom: 1.5rem;">
+            <i class="ph-fill ph-code-block logo-icon" style="color: var(--primary);"></i>
+            <span class="logo-text">DevProgram</span>
+        </div>
+        <p>&copy; 2026 DevProgram. All rights reserved. Built with passion for the next generation.</p>
+    </footer>
+</body>
+
+</html>

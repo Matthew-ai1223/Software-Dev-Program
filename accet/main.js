@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         fullname: fullname,
                         email: email,
                         phone: document.getElementById('phone').value,
+                        github: document.getElementById('github') ? document.getElementById('github').value : '',
                         track: document.querySelector('input[name="track"]:checked').value,
                         experience: document.getElementById('experience').value
                     })

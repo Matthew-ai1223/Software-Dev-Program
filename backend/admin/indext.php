@@ -41,6 +41,9 @@
 
         <main class="main-content">
             <header class="top-bar">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="ph ph-list"></i>
+                </button>
                 <div class="page-title"><h2 id="pageTitle">Manage Assignments</h2></div>
             </header>
 
